@@ -1,23 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  
+  
+  <title>싼 게 비지떡 되지 않게! 가격과 품질 모두 잡는 검증된 이사 사이트만 모았습니다</title>
+
+
+
+  
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "2025 전국 이사 서비스 추천 리스트",
+      "description": "포장이사, 보관이사, 원룸이사 등 카테고리별 검증된 업체 정보",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "포장이사 비용 견적 비교"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "지역별 우수 이삿짐 센터"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-bg: #f8fafd;
+            --accent-soft: #e3f2fd;
+            --text-main: #2c3e50;
+            --text-sub: #546e7a;
+            --card-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #1a237e;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            color: var(--text-sub);
+            font-size: 1.1rem;
+        }
+
+        .category-section {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-left: 15px;
+            border-left: 5px solid #3f51b5;
+            color: #1a237e;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .site-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid #edf2f7;
+            transition: var(--transition);
+            text-decoration: none;
+            display: block;
+        }
+
+        .site-card:hover {
+            transform: translateY(-5px);
+            border-color: #3f51b5;
+        }
+
+        .site-name {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1a237e;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .site-desc {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+            word-break: keep-all;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 100px;
+            padding-top: 40px;
+            border-top: 1px solid #ddd;
+            color: #90a4ae;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .grid-layout { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>싼 게 비지떡 되지 않게! 가격과 품질 모두 잡는 검증된 이사 사이트만 모았습니다</h1>
+    </header>
+
+    <div id="content-root">
+        </div>
+
+    <footer>
+        <p>본 페이지는 이사 서비스 정보 제공을 목적으로 하며, 각 서비스의 책임은 해당 업체에 있습니다.</p>
+    </footer>
+</div>
+
+<script>
+    const rawData = [
+        { name: "포장이사순위", url: "https://movingnkindg.withusgoat.com", desc: "국내 최정상급 이사 업체들의 서비스 만족도 지표를 객관적으로 분석하여 공개합니다" },
+        { name: "창원포장이사추천", url: "https://movingnkindh.withusgoat.com", desc: "경상권 핵심 거점 창원의 숙련된 전문가들이 제안하는 빈틈없는 포장 솔루션" },
+        { name: "타지역이사", url: "https://movingnkindi.withusgoat.com", desc: "경계를 넘는 긴 여정도 안심할 수 있는 장거리 전문 운송 시스템을 경험하십시오" },
+        { name: "6톤이사비용", url: "https://movingnkindj.withusgoat.com", desc: "대형 가구가 많은 가정을 위해 최적화된 중량별 합리적 가격 가이드를 제시합니다" },
+        { name: "포장이사보관", url: "https://movingnkindk.withusgoat.com", desc: "입주 날짜가 맞지 않아도 걱정 없는 프리미엄 실내 보관 결합 서비스" },
+        { name: "인천보관이사", url: "https://movingnkindl.withusgoat.com", desc: "항구 도시의 특수성을 고려한 습기 방지 특수 컨테이너 보관 이사" },
+        { name: "관악구이사", url: "https://movingnkindm.withusgoat.com", desc: "언덕이 많은 지형적 특색을 꿰뚫고 있는 지역 밀착형 베테랑 팀의 서비스" },
+        { name: "이삿짐센터견적", url: "https://movingnkindn.withusgoat.com", desc: "투명한 비용 산정을 위한 실시간 비교 데이터로 거품 없는 견적을 약속합니다" },
+        { name: "전주포장이사추천", url: "https://movingnkindo.withusgoat.com", desc: "전통과 현대가 공존하는 전주 지역에서 가장 선호되는 이사 파트너를 만나보세요" },
+        { name: "대전사무실이사", url: "https://movingnkindp.withusgoat.com", desc: "기업의 업무 공백을 최소화하는 신속하고 체계적인 비즈니스 이전 프로세스" },
+        { name: "부산보관이사비용", url: "https://movingnkindq.withusgoat.com", desc: "해양 도시 부산의 물류 환경에 최적화된 보관 비용을 데이터로 산출합니다" },
+        { name: "단지내이사비용", url: "https://movingnkindr.withusgoat.com", desc: "먼 거리 이동 없이도 정교한 기술이 필요한 단지 내 근거리 전담팀 가이드" },
+        { name: "마산이삿짐센터", url: "https://movingnkinds.withusgoat.com", desc: "마산 지역 골목까지 섬세하게 파악하고 있는 친절한 로컬 업체들의 집합소" },
+        { name: "대구이삿짐센터추천", url: "https://movingnkindt.withusgoat.com", desc: "더운 기후에도 완벽한 신선도를 유지하는 대구 지역 맞춤형 포장 기술력" },
+        { name: "같은아파트이사", url: "https://movingnkindu.withusgoat.com", desc: "동간 이동이나 층수 변경 시 비용을 획기적으로 절감하는 특별 플랜" },
+        { name: "경기광주포장이사", url: "https://movingnkindv.withusgoat.com", desc: "수도권 물류의 중심 경기 광주에서 만나는 최고 수준의 인프라와 서비스" },
+        { name: "이사짐센터순위", url: "https://movingnkindw.withusgoat.com", desc: "실제 이용 고객의 사후 평가를 토대로 산정된 신뢰할 수 있는 업계 랭킹" },
+        { name: "지방이사", url: "https://movingnkindx.withusgoat.com", desc: "전국 어디라도 일관된 품질의 서비스를 보장하는 광역 네트워크 망" },
+        { name: "당진포장이사", url: "https://movingnkindy.withusgoat.com", desc: "공단 지역의 특수 화물 처리 노하우를 보유한 당진의 프리미엄 이사팀" },
+        { name: "7톤이사비용", url: "https://movingnkindz.withusgoat.com", desc: "가장 많은 짐도 효율적으로 배분하여 비용 효율을 극대화하는 7톤 맞춤 견적" },
+        { name: "이삿짐장기보관", url: "https://movingokinda.withusgoat.com", desc: "해외 체류나 장기 리모델링 시 자산을 안전하게 보호하는 전용 창고 서비스" },
+        { name: "짐보관업체", url: "https://movingokindb.withusgoat.com", desc: "공간의 가치를 아는 전문가들이 제안하는 가장 쾌적한 짐 관리 솔루션" },
+        { name: "하루보관이사", url: "https://movingokindc.withusgoat.com", desc: "짧은 공백도 완벽하게 메우는 24시간 미만 단기 임시 보관 전문 서비스" },
+        { name: "오후이사", url: "https://movingokindd.withusgoat.com", desc: "바쁜 오전 일정을 피해 시간 활용도를 높인 합리적 가격의 오후 집중형 이사" },
+        { name: "광주광역시포장이사", url: "https://movingokinde.withusgoat.com", desc: "빛고을 광주의 정성과 친절함이 담긴 고품격 패키징 서비스를 경험하세요" },
+        { name: "오창이사", url: "https://movingokindf.withusgoat.com", desc: "과학 도시 오창의 세밀한 기술력이 돋보이는 IT 가전 전문 이전 서비스" },
+        { name: "30평포장이사비용", url: "https://movingokindg.withusgoat.com", desc: "가장 보편적인 주거 형태에 딱 맞는 가구 구성별 표준 견적을 공개합니다" },
+        { name: "송파구이삿짐센터", url: "https://movingokindh.withusgoat.com", desc: "대단지 아파트가 밀집된 송파 지역의 고난도 사다리차 작업 숙련팀" },
+        { name: "양천구이사", url: "https://movingokindi.withusgoat.com", desc: "교육의 중심지 목동 일대의 조용하고 정숙한 프리미엄 이사 문화를 선도합니다" },
+        { name: "의정부이사업체", url: "https://movingokindj.withusgoat.com", desc: "경기 북부권역 최고의 기동력을 자랑하는 베테랑들의 집합소" },
+        { name: "전주이삿짐", url: "https://movingokindk.withusgoat.com", desc: "전주 시민이 직접 선정한 가장 믿음직한 우리 동네 이사 전문가들" },
+        { name: "부산포장이사비용", url: "https://movingokindm.withusgoat.com", desc: "오션뷰 아파트부터 고지대 주택까지 부산 지형을 마스터한 견적 산출" },
+        { name: "분당보관이사", url: "https://movingokindq.withusgoat.com", desc: "스마트 시티 분당의 수준 높은 요구치를 만족시키는 항온항습 보관실" },
+        { name: "서울에서부산이사비용", url: "https://movingokindr.withusgoat.com", desc: "대한민국 남북을 잇는 장거리 이동의 정석, 네트워크를 통한 비용 최적화" },
+        { name: "지방이사비용", url: "https://movingokindv.withusgoat.com", desc: "거리당 요금 체계를 투명하게 공개하여 바가지 요금 없는 이동을 실현합니다" },
+        { name: "이사무료견적", url: "https://movingokindx.withusgoat.com", desc: "방문 없이 사진만으로도 정확한 산출이 가능한 차세대 스마트 견적 시스템" },
+        { name: "오산이삿짐센터", url: "https://movingokindy.withusgoat.com", desc: "급성장하는 오산 신도시의 젊고 역동적인 이사 전문가들이 대기 중입니다" },
+        { name: "송도이사", url: "https://movingokindz.withusgoat.com", desc: "국제도시 송도의 고층 빌딩 숲에서 발휘되는 정교한 초고층 전용 이전 기술" },
+        { name: "군포포장이사", url: "https://movingpkindb.withusgoat.com", desc: "교통 요충지 군포의 빠른 물류 속도를 체감할 수 있는 신속 배정 서비스" },
+        { name: "서울이사업체", url: "https://movingpkindc.withusgoat.com", desc: "대한민국 수도 서울 전역의 복잡한 골목길도 문제없는 숙련도 높은 팀" },
+        { name: "성북구이사업체", url: "https://movingpkinde.withusgoat.com", desc: "전통 가옥과 현대 아파트가 공존하는 성북구 맞춤형 조심스러운 핸들링" },
+        { name: "포항이사비용", url: "https://movingpkindg.withusgoat.com", desc: "제철 도시 포항의 강인함과 섬세함을 모두 갖춘 베테랑 팀의 견적표" },
+        { name: "부산이사짐보관", url: "https://movingpkindh.withusgoat.com", desc: "해풍으로부터 소중한 가구를 완벽하게 보호하는 특수 코팅 보관 시설" },
+        { name: "부산서울이사", url: "https://movingpkindj.withusgoat.com", desc: "남에서 북으로 가는 먼 여정의 피로도를 낮추는 2인 1조 교대 운송 시스템" },
+        { name: "가전제품보관", url: "https://movingpkindm.withusgoat.com", desc: "고가의 가전이 손상되지 않도록 정밀 제어되는 전문 창고에 맡기세요" },
+        { name: "대구이삿짐센터가격비교", url: "https://movingpkindo.withusgoat.com", desc: "영남권 최대 규모의 업체 데이터베이스를 통한 압도적 가격 경쟁력" },
+        { name: "천안보관이사", url: "https://movingpkindt.withusgoat.com", desc: "사통팔달 천안 물류의 이점을 살린 저렴하고 안전한 거점 보관 방식" },
+        { name: "이삿짐보관서비스", url: "https://movingpkindv.withusgoat.com", desc: "단순 보관을 넘어 정기적인 살균과 관리가 포함된 프리미엄 케어" },
+        { name: "포장이사주의사항", url: "https://movingpkindz.withusgoat.com", desc: "계약 전 반드시 체크해야 할 독소 조항과 필수 권리 정보를 제공합니다" },
+        { name: "이사카드결제", url: "https://movingqkinda.withusgoat.com", desc: "현금 결제의 부담을 덜고 포인트 적립까지 가능한 스마트 결제 시스템" },
+        { name: "부산화물차", url: "https://movingqkindm.withusgoat.com", desc: "대형 윙바디부터 소형 용달까지 상황에 맞는 최적의 차량을 배차합니다" },
+        { name: "이사짐센터비교", url: "https://movingqkinds.withusgoat.com", desc: "보험 가입 여부와 정식 허가증을 한눈에 대조할 수 있는 안심 플랫폼" },
+        { name: "컨테이너보관이사", url: "https://movingqkindt.withusgoat.com", desc: "완전 밀폐형 컨테이너로 프라이버시와 안전을 동시에 확보하는 보관법" },
+        { name: "10톤이사비용", url: "https://movingqkindv.withusgoat.com", desc: "대규모 기업체나 대가족도 한 번에 이동 가능한 매머드급 이사 플랜" },
+        { name: "일반이사추천", url: "https://movingrkindg.withusgoat.com", desc: "스스로 짐을 쌀 수 있는 고객을 위한 가장 실속 있고 경제적인 대안" },
+        { name: "이사허가업체", url: "https://movingrkindi.withusgoat.com", desc: "불법 업체의 피해로부터 당신을 보호하는 국토부 인증 공식 등록 명단" },
+        { name: "이삿집센터", url: "https://movingrkindn.withusgoat.com", desc: "단순한 이동이 아닌 새로운 보금자리의 시작을 함께하는 따뜻한 파트너" }
+    ];
+
+    const categories = [
+        "👑 프리미엄 포장이사 가이드",
+        "📍 서울/경기 권역 거점 업체",
+        "📦 보관이사 전문 솔루션",
+        "📉 합리적 실속 견적 섹션",
+        "🏢 비즈니스/사무실 이전",
+        "🌏 전국 지방권역 베테랑",
+        "🚛 톤수별 중량 이사 맞춤",
+        "🛡️ 안심 이사 주의사항/보험",
+        "🌊 부산/경상 지역 특화",
+        "🏠 아파트/단지 내 근거리"
+    ];
+
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    function renderPage() {
+        const root = document.getElementById('content-root');
+        const selectedSites = shuffle([...rawData]).slice(0, 85); // 85개 사이트 선택
+        const shuffledCategories = shuffle([...categories]);
+
+        shuffledCategories.forEach(cat => {
+            const section = document.createElement('section');
+            section.className = 'category-section';
+            
+            const title = document.createElement('h2');
+            title.className = 'category-title';
+            title.innerText = cat;
+            section.appendChild(title);
+
+            const grid = document.createElement('div');
+            grid.className = 'grid-layout';
+
+            // 각 카테고리당 8~10개의 사이트 무작위 배분 (예시를 위해 전체 데이터를 골고루 배분)
+            const catSites = shuffle([...selectedSites]).slice(0, Math.floor(Math.random() * 5) + 8);
+            
+            catSites.forEach(site => {
+                const card = document.createElement('a');
+                card.href = site.url;
+                card.target = "_blank";
+                card.className = 'site-card';
+                card.innerHTML = `
+                    <span class="site-name">${site.name}</span>
+                    <span class="site-desc">${site.desc}</span>
+                `;
+                grid.appendChild(card);
+            });
+
+            section.appendChild(grid);
+            root.appendChild(section);
+        });
+    }
+
+    window.onload = renderPage;
+</script>
+</body>
 </html>
